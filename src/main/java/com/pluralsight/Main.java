@@ -20,8 +20,7 @@ public class Main {
 
         Employee employee = new Employee(1, "Gerald" , "YearUp", 20.00, 20.00);
         System.out.println(employee.getHoursWorked());
-        employee.punchIn(8);
-        employee.punchOut(16);
+        employee.punchTimeCard(8,16);
         System.out.println(employee.getHoursWorked());
     }
 }
