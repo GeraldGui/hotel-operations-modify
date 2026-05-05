@@ -36,16 +36,15 @@ public class Room {
     public void checkIn() {
         isOccupied = true;
         isDirty = true;
-        System.out.println("Room is not available.");
+        System.out.println("Room is being checked in.");
     }
 
     public void checkout() {
-        cleanroom();
-        System.out.println("Room is getting clean then will be available.");
-        isAvailable();
+        isCleanroom();
+        System.out.println("Room is being checked out and getting clean then will be available.");
     }
 
-    public void cleanroom() {
-        isDirty = false;
+    public void isCleanroom() {
+        isAvailable();
     }
 }
